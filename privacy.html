@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI meeting – Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.7rem; } h2 { margin-top: 2rem; font-size: 1.15rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid #8884; padding: 8px; text-align: left; vertical-align: top; }
+  .overflow { overflow-x: auto; }
+  nav a { margin-right: 12px; }
+</style>
+</head>
+<body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="#vi">Tiếng Việt</a></nav>
+<h1>AI meeting – Privacy Policy</h1>
+<p><em>Last updated: 2026-10-31</em></p>
+<p>AI meeting is a Chrome extension that provides live transcription, translation and AI notes for online meetings on Google Meet, Zoom (web) and Microsoft Teams (web). This policy explains what data the extension handles and where it goes.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>We do <strong>not</strong> run a server for this extension. We do not receive, store or sell your audio, transcripts, notes or API key.</li>
+  <li>Audio and text you choose to process are sent <strong>directly from your browser to Google's Gemini API</strong>, using <strong>your own</strong> Gemini API key.</li>
+  <li>Meetings, notes and settings are stored <strong>only in your browser</strong> (<code>chrome.storage.local</code>). Audio is never saved.</li>
+</ul>
+
+<h2>Data the extension handles</h2>
+<div class="overflow"><table>
+<tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+<tr><td><strong>Meeting audio</strong> (the tab you start recording, and your microphone if you allow it)</td><td>Live transcription; translation; optional "Translate my voice"</td><td>Streamed to Google's Gemini API while recording. Not saved by the extension.</td></tr>
+<tr><td><strong>Transcripts, translations, AI notes, your notes, AI chat</strong></td><td>To show, search and export them</td><td>Stored locally in your browser. Text is sent to the Gemini API when it must be translated or summarised, or when you ask the AI a question.</td></tr>
+<tr><td><strong>Participant names shown on the meeting page</strong></td><td>To label who is speaking</td><td>Read from the meeting page in your browser and kept in the local transcript. Sent to Gemini only as part of transcript text when you request notes.</td></tr>
+<tr><td><strong>Your Gemini API key</strong></td><td>To authenticate your requests to Google</td><td>Stored locally in your browser. Sent only to Google's Gemini API. Never sent to us.</td></tr>
+<tr><td><strong>Settings</strong> (languages, theme, display name, shortcuts)</td><td>To remember your preferences</td><td>Stored locally in your browser.</td></tr>
+</table></div>
+<p>The extension does not collect browsing history, does not read pages outside Google Meet, Zoom and Microsoft Teams, and uses no analytics, advertising or tracking.</p>
+
+<h2>Google Gemini API</h2>
+<p>Your audio and text are processed by Google under the terms of your Gemini API plan. On Google's free tier, Google may use submitted content to improve its products; paid plans are treated differently. If your meetings are confidential, use a paid key and read Google's current terms: <a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a>.</p>
+
+<h2>Recording and consent</h2>
+<p>You are responsible for telling participants before you record or transcribe a meeting and for following the laws and company policies that apply to you. The extension asks you to confirm this before first use.</p>
+
+<h2>Retention and deletion</h2>
+<p>Data stays in your browser until you delete it. In <strong>Settings</strong> you can export or delete all meetings and settings at any time. Uninstalling the extension removes its local data.</p>
+
+<h2>Sharing</h2>
+<p>We do not sell, rent or share user data. The only third party that receives data is Google (Gemini API), at your request and with your key. We do not use or transfer user data for purposes unrelated to the extension's single purpose, to determine creditworthiness or for lending, or for advertising.</p>
+
+<h2>Children</h2>
+<p>The extension is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date above is updated and material changes are described in the extension's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="https://github.com/kaokray/ai-meeting-site/issues">github.com/kaokray/ai-meeting-site/issues</a></p>
+
+<hr>
+<h1 id="vi" lang="vi">AI meeting – Chính sách quyền riêng tư</h1>
+<div lang="vi">
+<ul>
+  <li>Chúng tôi <strong>không có máy chủ</strong> cho tiện ích này và không nhận, không lưu, không bán âm thanh, bản phiên âm, ghi chú hay API key của bạn.</li>
+  <li>Âm thanh và văn bản bạn xử lý được gửi <strong>trực tiếp từ trình duyệt của bạn tới Google Gemini API</strong>, bằng <strong>API key của chính bạn</strong>. Với gói miễn phí, Google có thể dùng nội dung gửi lên để cải thiện sản phẩm; hãy dùng key trả phí nếu cuộc họp mang tính bảo mật.</li>
+  <li>Cuộc họp, ghi chú và cài đặt chỉ lưu trong trình duyệt (<code>chrome.storage.local</code>). Âm thanh không được lưu.</li>
+  <li>Tiện ích chỉ đọc trang Google Meet, Zoom và Microsoft Teams; không thu thập lịch sử duyệt web, không dùng phân tích hay quảng cáo.</li>
+  <li>Bạn có trách nhiệm thông báo cho người tham gia trước khi ghi âm và tuân thủ pháp luật liên quan.</li>
+  <li>Bạn có thể xuất hoặc xoá toàn bộ dữ liệu trong <strong>Cài đặt</strong> bất cứ lúc nào.</li>
+  <li>Liên hệ: <a href="https://github.com/kaokray/ai-meeting-site/issues">github.com/kaokray/ai-meeting-site/issues</a></li>
+</ul>
+</div>
+</body>
+</html>

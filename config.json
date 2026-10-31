@@ -1,5 +1,5 @@
 {
-  "_note": "Read by the Lingomic extension every few hours. Only these keys are used. Change a model name here when Google retires a model; leave keyVideoUrl empty until the setup video exists.",
+  "_note": "Read by the LingoMic extension every few hours. Only these keys are used. Change a model name here when Google retires a model; leave keyVideoUrl empty until the setup video exists.",
   "models": {
     "transcribeModel": "gemini-3.5-transcribe-live",
     "geminiChatModel": "gemini-3.5-flash",

@@ -1,39 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LingoMic – live transcription, translation and notes</title>
-<meta name="description" content="Live transcription, translation and AI notes for Google Meet, Zoom and Microsoft Teams.">
-<style>
-  :root { color-scheme: light dark; }
-  body { font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-  h1 { font-size: 2rem; margin-bottom: .2em; } h2 { margin-top: 2rem; font-size: 1.15rem; }
-  nav a { margin-right: 12px; }
-</style>
+<title>LingoMic – Nói tiếng Việt, họ nghe tiếng Anh</title>
+<meta name="description" content="LingoMic dịch giọng nói của bạn trong cuộc họp Google Meet, Zoom và Teams, đồng thời phiên âm và tóm tắt bằng AI. Không cần bot vào phòng họp.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="https://github.com/kaokray/LingoMic/issues">Support</a></nav>
-<h1>LingoMic</h1>
-<p>Live transcription, translation and AI notes for Google Meet, Zoom (web) and Microsoft Teams (web). It works in your browser; no bot joins your call.</p>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="">LingoMic</a>
+  <nav>
+    <a href="#tinh-nang">Tính năng</a>
+    <a href="#bang-gia">Bảng giá</a>
+    <a href="#hoi-dap">Hỏi đáp</a>
+    <a class="lang" href="en/" hreflang="en">EN</a>
+  </nav>
+</div></header>
 
-<h2>Features</h2>
-<ul>
-  <li>Live captions with the speaker's name when the meeting page shows it</li>
-  <li>Sentence-by-sentence translation into 24 languages</li>
-  <li>LingoMic notes: summary, decisions, action items, open questions</li>
-  <li>Ask AI about the meeting, during or after it</li>
-  <li>Optional voice translation through a virtual microphone</li>
-  <li>Searchable dashboard, export to Markdown, TXT or JSON</li>
-  <li>10 interface languages, light and dark mode</li>
-</ul>
+<main>
+<div class="hero"><div class="wrap">
+  <h1>Nói tiếng Việt. <em>Họ nghe tiếng Anh.</em></h1>
+  <p class="lead">LingoMic dịch giọng nói của bạn ngay trong cuộc họp Google Meet, Zoom và Microsoft Teams, đồng thời ghi lại, phiên âm và tóm tắt cuộc họp bằng AI. Không cần bot vào phòng họp.</p>
+  <div class="actions">
+    <!-- Khi extension lên Chrome Web Store: thay href="#" bằng đường dẫn Store và bỏ aria-disabled. -->
+    <a class="btn btn-gold" href="#" aria-disabled="true">Thêm vào Chrome · sắp ra mắt</a>
+    <a class="btn btn-line" href="#cach-hoat-dong">Xem cách hoạt động</a>
+  </div>
+  <p class="note">Dành cho Chrome trên máy tính. Dùng key Gemini miễn phí của chính bạn.</p>
+  <div class="shot"><div class="crop"><img src="assets/img/2-voice.jpg" width="1280" height="800" alt="Cửa sổ LingoMic trong cuộc họp: bạn nói tiếng Việt, người nghe thấy bản dịch tiếng Anh"></div></div>
+</div></div>
 
-<h2>Bring your own key</h2>
-<p>You use your own Google Gemini API key (a free one from Google AI Studio is enough to start). Your meetings and notes stay in your browser. Read the <a href="privacy.html">privacy policy</a>.</p>
+<section id="cach-hoat-dong"><div class="wrap">
+  <div class="head"><div class="eyebrow">Cách hoạt động</div><h2>Bắt đầu trong ba bước</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Cài tiện ích</h3><p>Thêm LingoMic vào Chrome. Không cần cài phần mềm nào khác, không cần mời bot vào cuộc họp.</p></div>
+    <div class="step"><h3>Dán key Gemini miễn phí</h3><p>Tạo key trong Google AI Studio, mất khoảng một phút, không cần thẻ ngân hàng. LingoMic hướng dẫn từng bước.</p></div>
+    <div class="step"><h3>Bấm "Bắt đầu ghi"</h3><p>Vào cuộc họp, bấm biểu tượng LingoMic hoặc nhấn Alt+Shift+M. Phụ đề, bản dịch và ghi chú xuất hiện ngay.</p></div>
+  </div>
+</div></section>
 
-<h2>Support</h2>
-<p>Report a problem or ask a question: <a href="https://github.com/kaokray/LingoMic/issues">GitHub Issues</a>.</p>
+<section id="tinh-nang" class="alt"><div class="wrap">
+  <div class="head"><div class="eyebrow">Tính năng</div><h2>Làm việc với đồng nghiệp và khách nước ngoài bằng tiếng mẹ đẻ</h2></div>
+  <div class="grid">
+    <div class="card"><h3>Dịch giọng của bạn</h3><p>Bạn nói tiếng Việt, người khác nghe giọng nói đã dịch qua micro ảo. Chọn ngôn ngữ người nghe, trộn kèm giọng thật nếu muốn. Bản dịch trễ khoảng 2–4 giây.</p></div>
+    <div class="card"><h3>Phụ đề dịch trực tiếp</h3><p>Từng câu của cuộc họp hiện kèm bản dịch, dịch sang 24 ngôn ngữ. Có thể để tự nhận diện ngôn ngữ nói.</p></div>
+    <div class="card"><h3>Biết ai đang nói</h3><p>Mỗi câu gắn đúng tên người nói trên Google Meet, Zoom web và Teams web, thay cho "Người tham gia".</p></div>
+    <div class="card"><h3>Ghi chú AI sau cuộc họp</h3><p>Tóm tắt, ý chính, quyết định, việc cần làm và câu hỏi còn mở, tạo tự động khi bạn bấm dừng.</p></div>
+    <div class="card"><h3>Hỏi AI về cuộc họp</h3><p>"Họ vừa nói gì?", "Tôi cần làm gì?", "Viết email follow-up". AI trả lời dựa trên bản phiên âm.</p></div>
+    <div class="card"><h3>Dữ liệu nằm trên máy bạn</h3><p>Cuộc họp, ghi chú và API key chỉ lưu trong trình duyệt của bạn. Âm thanh không được lưu lại. Xuất ra Markdown, TXT hoặc JSON bất cứ lúc nào.</p></div>
+  </div>
+</div></section>
 
-<p><small>LingoMic is an independent product, not affiliated with or endorsed by Google, Zoom or Microsoft. Google Meet, Zoom and Microsoft Teams are trademarks of their respective owners.</small></p>
+<section><div class="wrap">
+  <div class="head"><div class="eyebrow">Giao diện</div><h2>Nhìn qua LingoMic</h2></div>
+  <div class="gallery">
+    <div class="crop"><img src="assets/img/1-live.jpg" width="1280" height="800" loading="lazy" alt="Phụ đề và bản dịch trực tiếp trong cuộc họp"></div>
+    <div class="crop"><img src="assets/img/3-notes.jpg" width="1280" height="800" loading="lazy" alt="Ghi chú AI: tóm tắt, ý chính, việc cần làm"></div>
+    <div class="crop"><img src="assets/img/4-transcript.jpg" width="1280" height="800" loading="lazy" alt="Bản phiên âm song ngữ, lọc theo người nói"></div>
+  </div>
+</div></section>
+
+<section id="bang-gia" class="alt"><div class="wrap">
+  <div class="head"><div class="eyebrow">Bảng giá</div><h2>Trả một lần, dùng lâu dài</h2>
+    <p class="lead">Mọi gói đều đủ tính năng, chỉ khác thời hạn. Không thu phí theo phút, vì AI chạy bằng key Gemini của chính bạn.</p></div>
+  <span class="soon">Thanh toán sẽ mở khi LingoMic ra mắt chính thức. Giá mở bán dành cho 300 khách đầu tiên.</span>
+  <div class="plans">
+    <div class="plan"><h3>Dùng thử</h3><div class="price">0đ<small> / 7 ngày</small></div><div class="was">&nbsp;</div>
+      <ul><li>Đủ tính năng</li><li>Tính từ cuộc họp đầu tiên</li><li>Không cần thẻ</li></ul></div>
+    <div class="plan"><h3>1 năm</h3><div class="price">299k</div><div class="was">399k</div>
+      <ul><li>Đủ tính năng</li><li>Cập nhật trong 1 năm</li><li>1 người dùng, 2 trình duyệt</li></ul></div>
+    <div class="plan best"><span class="tag">Hời nhất</span><h3>3 năm</h3><div class="price">499k</div><div class="was">799k</div>
+      <ul><li>Đủ tính năng</li><li>Cập nhật trong 3 năm</li><li>Chỉ khoảng 166k mỗi năm</li></ul></div>
+    <div class="plan"><h3>Trọn đời</h3><div class="price">1.249k</div><div class="was">1.990k</div>
+      <ul><li>Đủ tính năng</li><li>Cập nhật suốt thời gian sản phẩm hoạt động</li><li>Trả một lần, không gia hạn</li></ul></div>
+  </div>
+  <p class="fine">Giá gạch ngang là giá niêm yết sau đợt mở bán. Giá hiển thị bằng đồng Việt Nam; khách quốc tế xem <a href="en/#pricing">bảng giá USD</a>. Hoàn tiền: xem <a href="refund.html">chính sách hoàn tiền</a>.</p>
+</div></section>
+
+<section id="hoi-dap"><div class="wrap">
+  <div class="head"><div class="eyebrow">Hỏi đáp</div><h2>Câu hỏi thường gặp</h2></div>
+  <details><summary>API key Gemini có mất tiền không?</summary>
+    <p>Key tạo trong Google AI Studio miễn phí và không cần thẻ ngân hàng. Key chưa bật thanh toán thì không thể phát sinh phí. Gói miễn phí của Google có hạn mức theo phút và theo ngày; họp khoảng 1–2 giờ mỗi ngày thường dùng thoải mái, và LingoMic báo rõ khi chạm hạn mức. Google có thể thay đổi gói miễn phí, và LingoMic không kiểm soát việc đó.</p></details>
+  <details><summary>Âm thanh cuộc họp của tôi đi đâu?</summary>
+    <p>Âm thanh được gửi thẳng từ trình duyệt của bạn tới Google Gemini, bằng key của bạn, để chuyển thành chữ và dịch. LingoMic không lưu âm thanh. Với key miễn phí, Google có thể dùng nội dung gửi lên để cải thiện sản phẩm; nếu cuộc họp mang tính bảo mật, hãy dùng key trả phí. Chi tiết trong <a href="privacy.html">chính sách quyền riêng tư</a>.</p></details>
+  <details><summary>LingoMic chạy trên nền tảng nào?</summary>
+    <p>Google Meet, Zoom (bản web) và Microsoft Teams (bản web), trên Chrome máy tính. Việc ghi phụ đề còn dùng được với tab bất kỳ có phát âm thanh.</p></details>
+  <details><summary>Người kia có cần cài gì không?</summary>
+    <p>Không. Chỉ bạn cài LingoMic. Với dịch giọng, người kia nghe bản dịch như nghe micro của bạn.</p></details>
+  <details><summary>Tôi có cần xin phép trước khi ghi cuộc họp không?</summary>
+    <p>Có. Bạn có trách nhiệm thông báo cho người tham gia trước khi ghi hoặc phiên âm, và tuân thủ pháp luật cũng như quy định của công ty. LingoMic nhắc điều này khi bạn dùng lần đầu.</p></details>
+  <details><summary>Có bot vào phòng họp không?</summary>
+    <p>Không. LingoMic chạy ngay trong trình duyệt của bạn nên không xuất hiện trong danh sách người tham gia.</p></details>
+  <details><summary>Cần hỗ trợ?</summary>
+    <p>Gửi câu hỏi hoặc báo lỗi tại <a href="https://github.com/kaokray/LingoMic/issues">trang hỗ trợ</a>.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <nav><a href="privacy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a><a href="refund.html">Hoàn tiền</a><a href="https://github.com/kaokray/LingoMic/issues">Hỗ trợ</a><a href="en/">English</a></nav>
+  <small>LingoMic là sản phẩm độc lập, không liên kết với và không được bảo trợ bởi Google, Zoom hay Microsoft. Google Meet, Zoom và Microsoft Teams là thương hiệu của chủ sở hữu tương ứng.</small>
+</div></footer>
 </body>
 </html>

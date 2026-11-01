@@ -1,0 +1,5 @@
+Be Vietnam Pro — Copyright 2021 The Be Vietnam Pro Project Authors (https://github.com/bettergui/BeVietnamPro)
+Atkinson Hyperlegible Mono — Copyright 2024 Braille Institute of America, Inc.
+
+These fonts are licensed under the SIL Open Font License, Version 1.1.
+The full license text is available at https://openfontlicense.org/open-font-license-official-text/

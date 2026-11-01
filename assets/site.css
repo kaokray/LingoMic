@@ -125,3 +125,5 @@ footer small { color: #8a8678; line-height: 1.6; display: block; max-width: 80ch
 .hero .shot .crop { border-radius: 14px 14px 0 0; }
 .gallery .crop { border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(0,0,0,.08); }
 .hero h1 { max-width: 16ch; }
+
+.usd { color: var(--ink-2); font-size: .88rem; margin-top: 4px; }

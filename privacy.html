@@ -15,12 +15,13 @@
 
 <main class="doc"><div class="wrap">
 <h1>LingoMic – Privacy Policy</h1>
-<p class="updated">Last updated: 2026-10-31</p>
-<p>LingoMic is a Chrome extension that provides live transcription, translation and AI notes for online meetings on Google Meet, Zoom (web) and Microsoft Teams (web). This policy explains what data the extension handles and where it goes.</p>
+<p class="updated">Last updated: 2026-11-02</p>
+<p>LingoMic is a Chrome extension and a Windows app that provide live transcription, translation and AI notes for online meetings. This policy explains what data LingoMic handles and where it goes.</p>
 
 <h2>Summary</h2>
 <ul>
-  <li>We do <strong>not</strong> run a server for this extension. We do not receive, store or sell your audio, transcripts, notes or API key.</li>
+  <li>We never receive, store or sell your <strong>audio, transcripts, notes or API key</strong>.</li>
+  <li>When you sign in with Google, our account server keeps <strong>only your Google account email</strong> and <strong>how long you use LingoMic</strong> (per meeting: start time and length), to manage your trial and plan and to prevent abuse.</li>
   <li>Audio and text you choose to process are sent <strong>directly from your browser to Google's Gemini API</strong>, using <strong>your own</strong> Gemini API key.</li>
   <li>Meetings, notes and settings are stored <strong>only in your browser</strong> (<code>chrome.storage.local</code>). Audio is never saved.</li>
 </ul>
@@ -33,8 +34,10 @@
 <tr><td><strong>Participant names shown on the meeting page</strong></td><td>To label who is speaking</td><td>Read from the meeting page in your browser and kept in the local transcript. Sent to Gemini only as part of transcript text when you request notes.</td></tr>
 <tr><td><strong>Your Gemini API key</strong></td><td>To authenticate your requests to Google</td><td>Stored locally in your browser. Sent only to Google's Gemini API. Never sent to us.</td></tr>
 <tr><td><strong>Settings</strong> (languages, theme, display name, shortcuts)</td><td>To remember your preferences</td><td>Stored locally in your browser.</td></tr>
+<tr><td><strong>Google account</strong> (email, name, profile picture) from "Sign in with Google"</td><td>To identify your account for the trial and your plan</td><td>Name and picture stay on your device. The email is sent to the LingoMic account server together with a Google sign-in token, which the server checks with Google.</td></tr>
+<tr><td><strong>Usage</strong> (per meeting: a random meeting id, start time, length in seconds, whether voice translation was on)</td><td>Trial and plan limits, preventing abuse</td><td>LingoMic account server. Never the meeting content, title, link or participants.</td></tr>
 </table></div>
-<p>The extension does not collect browsing history, does not read pages outside Google Meet, Zoom and Microsoft Teams, and uses no analytics, advertising or tracking.</p>
+<p>The account server is hosted by Supabase (EU region) and acts only on our behalf. LingoMic does not collect browsing history, does not read pages outside Google Meet, Zoom and Microsoft Teams, and uses no analytics, advertising or tracking.</p>
 <p>Every few hours the extension downloads a small settings file (the names of the Gemini models to use) from kaokray.github.io. No user data is sent with this request.</p>
 
 <h2>Google Gemini API</h2>
@@ -44,10 +47,10 @@
 <p>You are responsible for telling participants before you record or transcribe a meeting and for following the laws and company policies that apply to you. The extension asks you to confirm this before first use.</p>
 
 <h2>Retention and deletion</h2>
-<p>Data stays in your browser until you delete it. In <strong>Settings</strong> you can export or delete all meetings and settings at any time. Uninstalling the extension removes its local data.</p>
+<p>Account data (email and usage) is kept while your account is active and deleted within 30 days of your request. Other data stays on your device until you delete it. In <strong>Settings</strong> you can export or delete all meetings and settings at any time. Uninstalling the extension removes its local data.</p>
 
 <h2>Sharing</h2>
-<p>We do not sell, rent or share user data. The only third party that receives data is Google (Gemini API), at your request and with your key. We do not use or transfer user data for purposes unrelated to the extension's single purpose, to determine creditworthiness or for lending, or for advertising.</p>
+<p>We do not sell, rent or share user data. Third parties that receive data: Google (Gemini API, at your request and with your key; Google sign-in) and Supabase (hosting of the account server). Payment providers will receive the data needed to process a purchase when paid plans open. We do not use or transfer user data for purposes unrelated to the extension's single purpose, to determine creditworthiness or for lending, or for advertising.</p>
 
 <h2>Children</h2>
 <p>The extension is not directed at children under 13.</p>
@@ -62,7 +65,8 @@
 <h1 id="vi" lang="vi">LingoMic – Chính sách quyền riêng tư</h1>
 <div lang="vi">
 <ul>
-  <li>Chúng tôi <strong>không có máy chủ</strong> cho tiện ích này và không nhận, không lưu, không bán âm thanh, bản phiên âm, ghi chú hay API key của bạn.</li>
+  <li>Chúng tôi <strong>không bao giờ</strong> nhận, lưu hay bán âm thanh, bản phiên âm, ghi chú hay API key của bạn.</li>
+  <li>Khi bạn đăng nhập Google, máy chủ tài khoản LingoMic (Supabase, vùng EU) chỉ lưu <strong>email Google</strong> và <strong>thời lượng sử dụng</strong> (mỗi cuộc họp: giờ bắt đầu và độ dài) để quản lý dùng thử, gói và chống lạm dụng. Tên và ảnh đại diện chỉ lưu trên máy bạn. Bạn có thể yêu cầu xoá tài khoản; dữ liệu được xoá trong vòng 30 ngày.</li>
   <li>Âm thanh và văn bản bạn xử lý được gửi <strong>trực tiếp từ trình duyệt của bạn tới Google Gemini API</strong>, bằng <strong>API key của chính bạn</strong>. Với gói miễn phí, Google có thể dùng nội dung gửi lên để cải thiện sản phẩm; hãy dùng key trả phí nếu cuộc họp mang tính bảo mật.</li>
   <li>Cuộc họp, ghi chú và cài đặt chỉ lưu trong trình duyệt (<code>chrome.storage.local</code>). Âm thanh không được lưu.</li>
   <li>Tiện ích chỉ đọc trang Google Meet, Zoom và Microsoft Teams; không thu thập lịch sử duyệt web, không dùng phân tích hay quảng cáo.</li>

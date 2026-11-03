@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /trial
+Disallow: /signup
+Disallow: /login
+
+Sitemap: https://lingomic.com/sitemap-index.xml
